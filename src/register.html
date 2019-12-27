@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<!-- <link rel="stylesheet" type="text/css" href="./css/bootstrap.css"/> -->
+		<link rel="stylesheet" type="text/css" href="./css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/register.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="r-header">
+				<div class="h-top">
+					<ul>
+						<li class="working"><a href="#">企业入口</a></li>
+						<li class="working"><a href="#">VIP入口</a></li>
+						<li><a href="index.html">乌镇官网</a></li>
+						<li><a href="#">|</a></li>
+						<li><a href="#">电话预定在线支付</a></li>
+						<li><a href="#">收藏</a></li>
+						<li><a href="login.html">登录</a></li>
+						<li><a href="#">|</a></li>
+						<li><a href="register.html">注册</a></li>
+					</ul>
+				</div>
+			</div>	
+			<div class="h-nav-wrap">
+				<div class="h-nav-con">
+					<div class="logo">
+						<h1>
+							<a href="reserve.html" class="icon">乌镇</a>
+						</h1>
+					</div>
+					<div class="u-main">
+						<div class="umBox">
+							<div class="staTics">
+								<a href="#">套餐</a>
+							</div>
+						</div>
+						<div class="umBox">
+							<div class="staTics">
+								<a href="#">酒店</a>
+							</div>
+						</div>
+						<div class="umBox umBox1">
+							<div class="staTics staTics1">
+								<a href="#">票务<img src="./img/sj.png" ></a>
+							</div>
+							<div class="movings movings1">
+								<p><a href="#">门票预定</a></p>
+								<p><a href="#">桐乡市民预约</a></p>
+								<p><a href="#">心美术馆门票</a></p>
+							</div>
+						</div>
+						<div class="umBox">
+							<div class="staTics">
+								<a href="#">会议</a>
+							</div>
+						</div>
+						<div class="umBox">
+							<div class="staTics">
+								<a href="#">美食</a>
+							</div>
+						</div>
+						<div class="umBox umBox1">
+							<div class="staTics staTics1">
+								<a href="#">购物娱乐<img src="./img/sj.png" ></a>
+							</div>
+							<div class="movings movings1">
+								<p><a href="#">特产礼品</a></p>
+								<p><a href="#">休闲娱乐</a></p>
+							</div>
+						</div>
+						<div class="umBox umBox1">
+							<div class="staTics staTics1">
+								<a href="#">一卡通<img src="./img/sj.png" ></a>
+							</div>
+							<div class="movings movings1">
+								<p><a href="#">乌村礼品卡</a></p>
+							</div>
+						</div>
+						<div class="umBox">
+							<div class="staTics">
+								<a href="#">服务帮助</a>
+							</div>
+						</div>
+						<div class="umBox">
+							<div class="staTics">
+								<a href="#">游玩攻略</a>
+							</div>
+						</div>
+					</div>
+					<div class="phone-number">
+						客服电话0573-88731088
+					</div>
+				</div>
+			</div>
+			<div class="main">
+				<div class="m-con">
+					<div class="m-con-m">
+						<div class="m-title">
+							<span>普通注册</span><span><a href="#">邮箱注册</a></span><span>|</span><span><a href="login.html">登录</a></span>
+						</div>
+						<form class="reg_form" method="post" action="/doReg.htm" id="validateForm1" novalidate="novalidate">
+							<input type="hidden" id="base" name="base" value="">
+							<input type="hidden" name="returnUrl" value="">
+							<div class="message-list show">
+								<div class="message account">
+									<span>账号 :</span><input type="text" placeholder="用户名" name="accountLoginVo.loginName">
+								</div>
+								
+								 <div class="message account">
+									<span>手机号 :</span>
+									<input id="mobile1" placeholder="手机号" name="accountLoginVo.mobile" type="text" class="l">
+								  
+								</div>
+								
+								<div class="message verification-code">
+									<span>验证码 :</span>
+									<input type="text" placeholder="校验码" id="checkCode1">
+									<img id="checkCodeImg1" src="img/yzm.png" ></a>
+								</div>
+								<div class="message dynamic-code">
+									<span>动态码 :</span>
+									<input type="text" placeholder="验证码" name="mobileCheckCode" size="4" >
+								   <a href="javascript:;" id="sendCode1">获取</a>
+								   <input type="hidden" name="repeatClick" id="repeatClick" value="0">
+								   <input type="hidden" name="sendFrom" id="sendFrom">
+								</div>
+								<div class="message account">
+									<span>真实姓名 :</span>
+									<input type="text" placeholder="真实姓名" name="accountLoginVo.realName">
+								</div>
+								<div class="message new-password">
+									<span>登录密码 :</span>
+									<input type="password" placeholder="登录密码" name="accountLoginVo.loginPass" id="password" >
+								</div>
+								<div class="message sure-password">
+									<span>密码确认 :</span>
+									<input type="password" placeholder="确认登录密码" validate="{required:true,equalTo:'#password'}">
+									<p class="err-message">两次输入密码不一致</p>
+								</div>
+								<div class="agreement clearfix">
+									<input name="checkFlag" type="checkbox">
+									<span class="agreement_spana">
+										我已阅读并同意
+										<a href="/page/serviceClause.htm" target="_blank">《乌镇电子商务服务使用协议》服务条款</a>
+									</span>
+								</div>
+								<div class="btn">
+									<a class="login-btn" href="javascript:void(0);">注册</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		
+		
+		
+		</div>
+		<script src="./js/jquery3.4.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="./js/swiper.animate1.0.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- script src="./js/bootstrap.js" type="text/javascript" charset="utf-8"></script> -->
+		<script src="./js/login.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
